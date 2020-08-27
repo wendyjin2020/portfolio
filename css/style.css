@@ -2545,6 +2545,10 @@ body.dark .timeline.exp .timeline-container::after, body.dark .timeline.edu .tim
   font-size: 22px;
 }
 
+.my-services {
+  padding: 0 20px;
+}
+
 .my-services h5{
   font-size: 1rem;
   margin-bottom: 40px;
