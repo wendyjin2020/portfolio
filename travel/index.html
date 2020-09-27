@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>加拿大旅游-爽翻了 - 2018加国无忧专题</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="css/flickity.min.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/ol.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+          integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+          crossorigin="anonymous"></script>
+  <link href="static/css/main.65027555.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="topnav">
+  <div class="container">
+    <div class="leftmenu">
+      <ul>
+        <li><a href="http://www.51.ca/">51首页</a></li>
+        <li><a href="http://www.51.ca/house/">房屋</a></li>
+        <li><a href="http://www.51.ca/job/">工作</a></li>
+        <li><a href="http://mall.51.ca/">商城</a></li>
+        <li><a href="http://www.51.ca/service/">黄页</a></li>
+        <li><a href="http://blog.51.ca/">博客</a></li>
+        <li><a href="http://sns.51.ca/">公社</a></li>
+        <li><a href="http://bbs.51.ca/">论坛</a></li>
+        <li><a href="http://kb.51.ca/">口碑</a></li>
+        <li><a href="http://tuan.51.ca/">团购</a></li>
+        <li class="fl"><a href="http://www.wenba.ca/" target="_blank">留学</a></li>
+        <li><a href="http://info.51.ca/life/spec/572204.html" target="_blank">教育</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="hero_banner"><img class="img-fluid hero-l" src="imgs/hero_banner.jpg"> <img
+    class="img-fluid hero-m" src="imgs/hero_banner-m.jpg"></div>
+<div class="myNav sticky-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-3 col-md-3 myNav-item"><a class="myNav-item01"
+                                                href="#a"><span>环游</span>加拿大</a></div>
+      <div class="col-3 col-md-3 myNav-item"><a class="myNav-item02" href="#b"><span>本月</span>推荐</a>
+      </div>
+      <div class="col-3 col-md-3 myNav-item"><a class="myNav-item03"
+                                                href="#c"><span>旅游</span>新资讯</a></div>
+      <div class="col-3 col-md-3 myNav-item"><a class="myNav-item04"
+                                                href="#d"><span>小熊猫</span>闯加国</a></div>
+    </div>
+  </div>
+</div>
+<div class="bottomNav fixed-bottom">
+  <div class="myNav-item"><a class="myNav-item01" href="#a"><span>环游</span>加拿大</a></div>
+  <div class="myNav-item"><a class="myNav-item02" href="#b"><span>本月</span>推荐</a></div>
+  <div class="myNav-item"><a class="myNav-item03" href="#c"><span>旅游</span>新资讯</a></div>
+  <div class="myNav-item"><a class="myNav-item04" href="#d"><span>小熊猫</span>闯加国</a></div>
+</div>
+<section id="a" class="sec sec-map">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6"><h1 class="sec-title"><img src="imgs/title01.png"></h1></div>
+    </div>
+    <div class="modal fade map-modal" id="mapModal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header"><h5 class="modal-title" id="exampleModalLongTitle">渥太华</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+          <input type="hidden" name="id" id="id"/>
+          <div class="modal-body map-popup-content">
+            <div class="map-popup-top"><a href="" target="_blank"><img class="map-popup-top-imgs"
+                                                                       src="imgs/hot02.jpg">
+              <p>
+                <经典线路热销7日>【温哥华＋维多利亚+落基山班夫国家公园＋贾斯珀国家公园】一晚入住童话小镇班夫、免费温哥华邮轮码头接/</经典线路热销7日>
+              </p>
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map-react" class="map-react"></div>
+  </div>
+</section>
+<section id="b" class="sec sec-monthRec">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6"><h1 class="sec-title"><img src="imgs/title04.png"></h1></div>
+    </div>
+    <div class="row food">
+      <div class="col-6 col-md-3">
+        <figure class="effect-honey"><img class="img-fluid" src="imgs/food-rec01.jpg">
+          <figcaption>
+            <h2><span>咖啡·烘焙</span> <i class="fas fa-arrow-circle-right"></i>
+              <small>星巴克多伦多首家Reserve店开业</small>
+            </h2>
+            <a href="http://kb.51.ca/article/2033" target="_blank">View more</a></figcaption>
+        </figure>
+      </div>
+      <div class="col-6 col-md-3">
+        <figure class="effect-honey"><img class="img-fluid" src="imgs/food-rec02.jpg">
+          <figcaption>
+            <h2><span>网红·美食</span> <i class="fas fa-arrow-circle-right"></i>
+              <small>一次性吃遍网红美食竟然只要$30刀！</small>
+            </h2>
+            <a href="http://kb.51.ca/article/2040" target="_blank">View more</a></figcaption>
+        </figure>
+      </div>
+      <div class="col-6 col-md-3">
+        <figure class="effect-honey"><img class="img-fluid" src="imgs/food-rec03.jpg">
+          <figcaption>
+            <h2><span>颜值·奶茶</span> <i class="fas fa-arrow-circle-right"></i>
+              <small>Ins上最红的“奶茶实验室”！</small>
+            </h2>
+            <a href="http://kb.51.ca/article/2032" target="_blank">View more</a></figcaption>
+        </figure>
+      </div>
+      <div class="col-6 col-md-3">
+        <figure class="effect-honey"><img class="img-fluid" src="imgs/food-rec04.jpg">
+          <figcaption>
+            <h2><span>真鲜·生蚝</span> <i class="fas fa-arrow-circle-right"></i>
+              <small>$1刀吃生蚝攻略在此</small>
+            </h2>
+            <a href="http://kb.51.ca/article/2028" target="_blank">View more</a></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="places">
+      <div class="carousel" data-flickity='{ "cellAlign": "left" , "contain": true }'>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec01.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>户外</span></h5>
+              <p class="card-text">春天到啦：4月至5月多伦多户外好去处</p><a
+                  href="http://info.51.ca/life/travel/2017-04/531194.html" class="btn myBtn"
+                  target="_blank">去看看</a></div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec02.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>樱花</span></h5>
+              <p class="card-text">又到赏樱季：多伦多今年的樱花要这样看</p><a
+                  href="http://info.51.ca/life/travel/2017-04/524243.html" class="btn myBtn"
+                  target="_blank">去看看</a></div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec03.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>郁金香</span></h5>
+              <p class="card-text">最盛大的郁金香节 春季去加拿大看花</p><a
+                  href="http://info.51.ca/life/travel/2018-03/632625.html" class="btn myBtn"
+                  target="_blank">去看看</a></div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec04.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>CN塔</span></h5>
+              <p class="card-text">CN塔居然变成这样了！今天起对游客开放</p><a
+                  href="http://info.51.ca/life/play/2018-03/632148.html" class="btn myBtn"
+                  target="_blank">去看看</a></div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec05.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>郁金香</span></h5>
+              <p class="card-text">盘点：加拿大赏郁金香的绝佳地点</p><a
+                  href="http://info.51.ca/life/travel/2018-03/632634.html" class="btn myBtn"
+                  target="_blank">去看看</a></div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec06.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>小镇</span></h5>
+              <p class="card-text">七座特色小镇，藏着属于加拿大安大略的慢时光</p><a href="http://info.51.ca/life/travel/2018-03/627888.html" target="_blank" class="btn myBtn">去看看</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec07.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>花园</span></h5>
+              <p class="card-text">多伦多最美的五大花园！这个春天，一定要去</p><a href="http://info.51.ca/life/play/2017-04/528259.html" target="_blank" class="btn myBtn">去看看</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="card">
+            <div class="card-img-wrap"><img class="img-fluid" src="imgs/places-rec08.jpg"></div>
+            <div class="card-body"><h5 class="card-title"><span>樱花</span></h5>
+              <p class="card-text">密市隐藏的赏樱日式公园——宛如世外桃源！</p><a href="http://info.51.ca/life/play/2018-04/635782.html" target="_blank" class="btn myBtn">去看看</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="c" class="sec sec-travlinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6"><h1 class="sec-title"><img src="imgs/title03.png"></h1></div>
+    </div>
+  </div>
+  <div class="container-fluide">
+    <div class="carousel sec-travlinfo-carousel"
+         data-flickity='{ "cellAlign": "left" , "contain": true , "imagesLoaded": true  }'>
+      <div class="carousel-cell a">
+        <div class="carousel-meida"><img class="img-fluid" src="imgs/slide01.jpg"></div>
+        <div class="carousel-contents"><h2>2018加拿大必去的景点</h2>
+          <p>爸妈来了不知道带他们去哪里玩？亲朋好友让你推荐景点却讲不出一二三？</p><a class="carousel-contents-link"
+                                                     href="http://info.51.ca/life/travel/2018-03/633019.html"
+                                                     target="_blank" target="_blank">去看看</a></div>
+      </div>
+      <div class="carousel-cell b">
+        <div class="carousel-meida"><img class="img-fluid" src="imgs/slide02.jpg"></div>
+        <div class="carousel-contents"><h2>2018 Summer Camp大全</h2>
+          <p>手把手教你帮孩子选择这个夏天最适合的营地</p><a class="carousel-contents-link"
+                                        href="http://info.51.ca/life/play/2018-03/633759.html?1522767026" target="_blank">去看看</a>
+        </div>
+      </div>
+      <div class="carousel-cell c">
+        <div class="carousel-meida"><img class="img-fluid" src="imgs/slide03.jpg"></div>
+        <div class="carousel-contents"><h2>密市隐藏的日式公园</h2>
+          <p>赏樱宝地Kariya Park——宛如世外桃源！</p><a class="carousel-contents-link"
+                                            href="http://info.51.ca/life/play/2018-04/635782.html" target="_blank">去看看</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container travlinfo-more">
+    <ul class="tabs">
+      <li class="tab-link current" data-tab="tab-1"><i class="fab fa-hotjar"></i> 热门推荐</li>
+      <li class="tab-link" data-tab="tab-2"><i class="fas fa-gift"></i> 伴手礼</li>
+    </ul>
+    <h2 class="travlinfo-more-title"><span><i class="fab fa-hotjar"></i></span> 热门推荐</h2>
+    <div id="tab-1" class="tab-content current">
+      <div class="row">
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/play/2018-04/635864.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/hot01.jpg">
+            <div class="img4txt"><h4>自驾游</h4>攒足马力，畅游加国</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/play/2016-06/430069.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/hot02.jpg">
+            <div class="img4txt"><h4>亲子</h4>爸比妈咪，我们去哪儿</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/travel/2018-03/632707.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/hot05.jpg">
+            <div class="img4txt"><h4>情侣</h4>想和你一起去看世界</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/solicit/2013-07/302021.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/hot04.jpg">
+            <div class="img4txt"><h4>国家公园</h4>大自然的精雕细琢</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/play/2017-03/520960.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/hot06.jpg">
+            <div class="img4txt"><h4>露营</h4>感受不一样的生活姿态</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box" href="http://info.51.ca/life/travel/2018-04/636184.html" target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/hot03.jpg">
+            <div class="img4txt"><h4>游轮</h4>大海阳光，真正享受旅游</div>
+          </div>
+        </a></div>
+      </div>
+    </div>
+    <h2 class="travlinfo-more-title"><span><i class="fas fa-gift"></i></span> 伴手礼</h2>
+    <div id="tab-2" class="tab-content">
+      <div class="row">
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/travel/2013-03/288969.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/gift04.jpg">
+            <div class="img4txt"><h4>枫糖浆</h4>明亮清透，味道清淡香甜</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/news/canada/2014-02/327383.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/gift03.jpg">
+            <div class="img4txt"><h4>冰酒</h4>举世闻名的“黄金液体”</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/travel/2018-03/632757.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/gift01.jpg">
+            <div class="img4txt"><h4>西洋参</h4>百草之王，滋补良品</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/cate/2018-03/632912.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/gift02.jpg">
+            <div class="img4txt"><h4>白蜜</h4>世界顶级蜂蜜</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/cate/2018-03/632941.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/gift06.jpg">
+            <div class="img4txt"><h4>鲑鱼</h4>肉质紧实，鲜甜肥美</div>
+          </div>
+        </a></div>
+        <div class="col-6 col-md-4 p5"><a class="img4box"
+                                          href="http://info.51.ca/life/shopping/2018-04/636447.html"
+                                          target="_blank">
+          <div class="padding-remover"><img class="img-responsive" src="imgs/gift05.jpg">
+            <div class="img4txt"><h4>保健品</h4>质量领先全球，送人自备首选</div>
+          </div>
+        </a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="d" class="sec sec-panda">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6"><h1 class="sec-title"><img src="imgs/title02.png"></h1></div>
+    </div>
+    <div class="sec-panda-content">
+      <div class="row">
+       <div class="col-md-3 d-none d-md-block">
+         <img class="img-fluid panda-img" src="imgs/panda-toronto.png">
+       </div>
+       <div class="col-12 col-md-9">
+         <div class="row">
+           <div class="col-lg-4">
+             <h4>和小熊猫一起“闯”加拿大，收集12张加拿大景点明信片！</h4>
+             <p class="p-large">集齐所有明信片的用户，将有机会赢取回国往返机票一张！<br> <b>前50名集齐12张明信片的用户，将会获得精美《小熊猫闯加国》明信片实物一套！</b> </p>
+           </div>
+           <div class="col-lg-8">
+             <h6>奖品列表</strong></h6>
+             <p>柳泉酒庄（冰酒）、大山行（参茶礼盒、折扣券等）、在线旅游（古巴团、机票折扣券等）、联谊假期（韩国双人游、德国小镇游等）、海外旅游（黄刀双人游、迪士尼双人游等）、阳光假期（纽芬兰游代金券）...</p>
+             <h6>领奖办法</strong></h6>
+             <p>中奖的用户请留下有效的手机以及邮件，加国无忧51.CA工作人员将于8月6日统一邮件通知领奖。本活动部分奖品需要上门领取。</p>
+           </div>
+           <div class="col-12 claimer"><small>免责声明：本活动由加国无忧51.CA主办，最终解释权归本公司所有。 <Br>
+               隐私收集声明：在活动中所填写的个人信息仅用于发奖核对使用，不会对外公布及用作其他用途。</small> </div>
+         </div>
+
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section  class="sec sec-sponsor">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12"><h4><span>商家赞助</span></h4></div>
+      <div class="col-10 col-md-5"><img class="img-fluid sponsor-img" src="imgs/s-willowspringswinery.jpg"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-4"><img class="img-fluid sponsor-img" src="imgs/s-olnine.jpg"></div>
+      <div class="col-10 col-md-4"><img class="img-fluid sponsor-img" src="imgs/s-nexus.jpg"></div>
+      <div class="col-10 col-md-4"><img class="img-fluid sponsor-img" src="imgs/s-tianbao.jpg"></div>
+    </div>
+  </div>
+</section>
+<div class="footerbox container-fluide"><p>COPYRIGHT @ 2018 加国无忧</p></div>
+<ul class="sidebox list-unstyled">
+  <li><a href="#a">环游加拿大</a></li>
+  <li><a href="#d">本月推荐</a></li>
+  <li><a href="#c">旅游新资讯</a></li>
+  <li><a href="#b">小熊猫闯加国</a></li>
+  <li><a href="#" class="back-to-top">返回顶部</a></li>
+</ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/data.js"></script>
+<script>$(function () {
+  $(".myNav-item a, .sidebox li a").click(function () {
+    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "")
+        && location.hostname == this.hostname) {
+      var a = $(this.hash);
+      if ((a = a.length && a || $("[name=" + this.hash.slice(1) + "]")).length) {
+        var t = a.offset().top;
+        return $("html,body").animate({scrollTop: t}, 1e3), !1
+      }
+    }
+  })
+})</script>
+<script>$(document).ready(function () {
+  $("ul.tabs li").click(function () {
+    var t = $(this).attr("data-tab");
+    $("ul.tabs li").removeClass("current"), $(".tab-content").removeClass("current"), $(
+        this).addClass("current"), $("#" + t).addClass("current")
+  })
+})</script>
+<script>window.openModal = (id) => {
+  $('#mapModal #id').val(id);
+  $('#mapModal').modal('show')
+}
+
+$('#mapModal').on('show.bs.modal', function (event) {
+  var id = $(this).find('#id').val();
+  $(this).find('.modal-title').text(data[id] && data[id].name ? data[id].name : "");
+  $(this).find('.modal-body .map-popup-top-imgs').attr("src",
+      data[id] && data[id].thumb ? data[id].thumb : "imgs/hot02.jpg");
+  $(this).find('.modal-body .map-popup-top p').text(data[id] && data[id].desc ? data[id].desc : "");
+  $(this).find('.modal-body .map-popup-top a').attr("href", data[id].url ? data[id].url : "");
+  $(this).find('.map-popup-items').remove();
+  data[id] && data[id].packages ? data[id].packages
+  .sort(() => Math.random() - 0.5)
+  .map(item => {
+    $(this).find('.modal-body').append(
+        '<div class="map-popup-items clearfix">'
+        + '<a href="' + (item.url ? item.url : '') + '" target="_blank">'
+        + '<div class="map-popup-items-img"><img src="' + (item.thumb ? item.thumb : '')
+        + '"></div>'
+        + '<div class="map-popup-items-content">'
+        + '<p class="map-popup-items-title">' + (item.title ? item.title : '') + '</p>'
+        + '<div class="row">'
+        + '<div class="col-5 map-popup-items-days"><p>行程天数:</p> <i>' + (item.days ? item.days : '')
+        + '</i></div>'
+        + '<div class="col-7 map-popup-items-prices"><p>价格：</p><i>' + (item.price ? item.price : '')
+        + '</i></div>'
+        + '</div>'
+        + '</a>'
+        + '</div>'
+    )
+  }) : "";
+})</script>
+<script type="text/javascript" src="static/js/main.8d02b819.js"></script>
+</body>
+</html>
